@@ -1,7 +1,9 @@
+"""
+Image Processor - Simple & Clean
+"""
 
 from PIL import Image, ImageFilter, ImageEnhance
 import requests
-from io import BytesIO
 
 class ImageProcessor:
     
@@ -48,7 +50,10 @@ class ImageProcessor:
         """Load image from URL or local path"""
         if image_path.startswith('http'):
             response = requests.get(image_path)
-            return Image.open(BytesIO(response.content))
+            temp_file = "temp_image.jpg"
+            with open(temp_file, 'wb') as f:
+                f.write(response.content)
+            return Image.open(temp_file)
         return Image.open(image_path)
 
 
