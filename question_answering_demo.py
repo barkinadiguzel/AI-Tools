@@ -1,5 +1,5 @@
 from transformers import pipeline
-
+ 
 qa = pipeline("question-answering", model="distilbert-base-cased-distilled-squad")
 
 
