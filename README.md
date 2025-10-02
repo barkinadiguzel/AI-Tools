@@ -1,9 +1,10 @@
-# AI Tools
-Collection of lightweight AI tools for text processing, image processing, and machine learning utilities. Built with PyTorch, Hugging Face, and standard Python libraries.
+# 🤖 AI Tools
+A collection of lightweight AI tools for 📝 text processing, 🖼️ image processing, and ⚙️ machine learning utilities. Built with PyTorch, Hugging Face, and standard Python libraries.
 
-## Quick Start
+## 🚀 Quick Start
 ```bash
 pip install torch transformers Pillow requests
+
 ```
 
 ## Feedback
